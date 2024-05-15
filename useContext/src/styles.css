@@ -1,0 +1,50 @@
+[data-theme="dark"] {
+  --bg-color: grey;
+  --color: white;
+}
+[data-theme="light"] {
+  --bg-color: white;
+  --color: black;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  align-items: center;
+}
+
+.toggle__theme {
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: antiquewhite;
+  transition: 0.4s;
+}
+.toggle__theme dark {
+  position: absolute;
+  content: none;
+  width: 60px;
+  height: 26px;
+  border-radius: 50%;
+  transition: 0.4s;
+  transform: translateX(25px);
+}
+.toggle__theme dark {
+  position: absolute;
+  content: none;
+  width: 60px;
+  height: 26px;
+  border-radius: 50%;
+  transition: 0.4s;
+  transform: translateX(25px);
+}
