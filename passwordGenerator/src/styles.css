@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password__text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button {
+  font-weight: 500;
+  color: white;
+  background-color: purple;
+  border: none;
+  border-radius: 24px;
+  padding: 0.5em 2em;
+  font-size: large;
+  cursor: pointer;
+}
+
+.input__range {
+  display: block;
+  width: 100%;
+}
+
+.password__length {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__types {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5em;
+}
+.input__types > div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.input__types input {
+  cursor: pointer;
+}
+
+.generate__button {
+  text-align: center;
+}
+.big__button {
+  font-size: 24px;
+}
+
+.error__message {
+  font-size: 12px;
+  color: red;
+}
+
+.header span {
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  /* transform: translateY(-10px); */
+  animation: goup 1.4s ease-out 0s 1 normal forwards running;
+}
+
+.password__copy {
+  font-size: 16px;
+  color: green;
+  background-color: transparent;
+  padding: 4px 0.5em;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+@keyframes goup {
+  0% {
+    top: 0px
+    opacity: 0.2;
+  }
+  50% {
+    top: -8px;
+    opacity: 0.7;
+  }
+  100% {
+    top: -20px;
+    opacity: 1;
+  }
+}
