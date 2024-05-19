@@ -5,7 +5,9 @@ import "./Grid.css";
 function Grid({ grid, gridSize, handleNodeClick, gameOver }) {
   return (
     <div
-      className={`grid ${(gameOver.win || gameOver.draw) && "disable__grid"}`}
+      className={`grid ${
+        gameOver.win || gameOver.draw ? "disable__grid animate__grid" : ""
+      }`}
       style={{
         gridTemplateColumns: `repeat(${gridSize}, 100px)`,
         gridTemplateRows: `repeat(${gridSize}, 100px)`,

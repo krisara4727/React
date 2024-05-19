@@ -1,9 +1,23 @@
 .grid {
   display: grid;
   justify-content: center;
+  gap: 2px;
 }
 
 .disable__grid {
   pointer-events: none;
   cursor: default;
+}
+
+.animate__grid {
+  animation: rotateGrid 1s 1 linear;
+}
+
+@keyframes rotateGrid {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
